@@ -7,10 +7,10 @@ import time
 from pathlib import Path
 
 # --- Configuration ---
-STEAM_API_KEY = "YOUR_STEAM_API_KEY"
+STEAM_API_KEY = "YOUR_STEAM_API_KEY" # get a steam api key from https://steamcommunity.com/dev/apikey
 STEAM_ID = "YOUR_STEAM_ID"
-LENDER_IDS = ["LENDER_STEAM_ID_1", "LENDER_STEAM_ID_2"]
-STEAMGRIDDB_API_KEY = "YOUR_STEAMGRIDDB_API_KEY"
+LENDER_IDS = ["LENDER_STEAM_ID_1", "LENDER_STEAM_ID_2"] # Replace these with the ids of your steam family members
+STEAMGRIDDB_API_KEY = "YOUR_STEAMGRIDDB_API_KEY" # get a SteamGridDB api key from https://www.steamgriddb.com/api/v2
 APPS_JSON_PATH = r"C:\\Program Files\\Apollo\\config\\apps.json"
 COVERS_FOLDER = r"C:\\Program Files\\Apollo\\config\\covers"
 
@@ -94,7 +94,7 @@ for appid, name in game_map.items():
 
     cover_path = fetch_cover_image(name, appid)
     if not cover_path:
-        print(f"  ⚠️  Failed to get cover for {name}, skipping.")
+        print(f"  ⚠️  Failed to get cover for {name}, skipping.") # this could fail due to special characters, haven't tested it yet
         continue
 
     app_entry = generate_app_entry(name, appid, cover_path)
