@@ -1,1 +1,10 @@
-# apollo-game-library-adder
+# Apollo Game Adder
+
+Automatically adds your Steam games (including Family Shared ones) to Apollo (Sunshine fork) with cover images from SteamGridDB.
+note ( ugh I think updating apollow will actually reset the applications, I'm not sure tho cuz I havent updated it yet)
+
+## ✨ Features
+- Adds games to Apollo's `apps.json`
+- Gets game covers from SteamGridDB
+- Supports family-shared games
+- Avoids adding duplicates
