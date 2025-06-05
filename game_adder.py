@@ -8,11 +8,11 @@ from pathlib import Path
 
 # --- Configuration ---
 STEAM_API_KEY = "YOUR_STEAM_API_KEY" # get a steam api key from https://steamcommunity.com/dev/apikey
-STEAM_ID = "YOUR_STEAM_ID"
+STEAM_ID = "YOUR_STEAM_ID" # you can get this from steam > account details
 LENDER_IDS = ["LENDER_STEAM_ID_1", "LENDER_STEAM_ID_2"] # Replace these with the ids of your steam family members
 STEAMGRIDDB_API_KEY = "YOUR_STEAMGRIDDB_API_KEY" # get a SteamGridDB api key from https://www.steamgriddb.com/api/v2
-APPS_JSON_PATH = r"C:\\Program Files\\Apollo\\config\\apps.json"
-COVERS_FOLDER = r"C:\\Program Files\\Apollo\\config\\covers"
+APPS_JSON_PATH = r"C:\\Program Files\\Apollo\\config\\apps.json" # path for the apps.json
+COVERS_FOLDER = r"C:\\Program Files\\Apollo\\config\\covers" #path for the cover folder
 
 # --- Utility Functions ---
 def sanitize_filename(name):
@@ -72,7 +72,7 @@ def generate_app_entry(game_name, appid, image_path):
         "scale-factor": 100,
         "use-app-identity": False,
         "uuid": str(uuid.uuid4()).upper(),
-        "virtual-display": True,
+        "virtual-display": True, # False if you dont want it to use virutal display.
         "wait-all": True
     }
 
