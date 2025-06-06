@@ -10,7 +10,7 @@ from pathlib import Path
 STEAM_API_KEY = "YOUR_STEAM_API_KEY" # get a steam api key from https://steamcommunity.com/dev/apikey
 STEAM_ID = "YOUR_STEAM_ID" # you can get this from steam > account details
 LENDER_IDS = ["LENDER_STEAM_ID_1", "LENDER_STEAM_ID_2"] # Replace these with the ids of your steam family members
-STEAMGRIDDB_API_KEY = "YOUR_STEAMGRIDDB_API_KEY" # get a SteamGridDB api key from https://www.steamgriddb.com/api/v2
+STEAMGRIDDB_API_KEY = "YOUR_STEAMGRIDDB_API_KEY" # get a SteamGridDB api key from https://www.steamgriddb.com/profile/preferences/api
 APPS_JSON_PATH = r"C:\\Program Files\\Apollo\\config\\apps.json" # path for the apps.json
 COVERS_FOLDER = r"C:\\Program Files\\Apollo\\config\\covers" #path for the cover folder
 
